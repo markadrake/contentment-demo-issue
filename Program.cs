@@ -1,3 +1,5 @@
+using SmallUmbraco13Example.Extensions;
+
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.CreateUmbracoBuilder()
@@ -5,6 +7,7 @@ builder.CreateUmbracoBuilder()
     .AddWebsite()
     .AddDeliveryApi()
     .AddComposers()
+    .ReplaceConverter<Umbraco.Community.Contentment.DataEditors.DataListValueConverter, SmallUmbraco13Example.ValueConverters.DataListValueConverter>()
     .Build();
 
 WebApplication app = builder.Build();
