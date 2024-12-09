@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="Umbraco.Cms" Version="13.5.2" />
-    <PackageReference Include="Umbraco.Community.Contentment" Version="5.0.2" />
+    <PackageReference Include="Umbraco.Community.Contentment" Version="5.1.0" />
   </ItemGroup>
 
   <ItemGroup>
